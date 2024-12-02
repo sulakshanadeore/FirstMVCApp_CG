@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "ShowEmpList";
+}
+
+<h2>ShowEmpList</h2>
+
+<table>
+    <tr>
+        <th>EmployeeID </th>
+        <th>EmployeeName </th>
+        <th>Employee Salary </th>
+
+    </tr>
+    @foreach (var item in ViewBag.empdata)
+    {
+        <tr>
+            <td>@item.Empid</td>
+            <td>@item.EmpName</td>
+            <td>@item.Salary</td>
+        </tr>
+
+    }
+</table>
